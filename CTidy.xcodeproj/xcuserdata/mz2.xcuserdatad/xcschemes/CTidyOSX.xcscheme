@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F2A139C19DD86C8005817F9"
-               BuildableName = "CTidyOSX.framework"
-               BlueprintName = "CTidyOSX"
+               BuildableName = "Tidy.framework"
+               BlueprintName = "Tidy"
                ReferencedContainer = "container:CTidy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F2A139C19DD86C8005817F9"
-            BuildableName = "CTidyOSX.framework"
-            BlueprintName = "CTidyOSX"
+            BuildableName = "Tidy.framework"
+            BlueprintName = "Tidy"
             ReferencedContainer = "container:CTidy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F2A139C19DD86C8005817F9"
-            BuildableName = "CTidyOSX.framework"
-            BlueprintName = "CTidyOSX"
+            BuildableName = "Tidy.framework"
+            BlueprintName = "Tidy"
             ReferencedContainer = "container:CTidy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

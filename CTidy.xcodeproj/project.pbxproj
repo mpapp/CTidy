@@ -409,9 +409,9 @@
 			productReference = 5445E1BB1593248A00A3137D /* libCTidy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5F2A139C19DD86C8005817F9 /* CTidyOSX */ = {
+		5F2A139C19DD86C8005817F9 /* Tidy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "CTidyOSX" */;
+			buildConfigurationList = 5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "Tidy" */;
 			buildPhases = (
 				5F2A139819DD86C8005817F9 /* Sources */,
 				5F2A139919DD86C8005817F9 /* Frameworks */,
@@ -422,7 +422,7 @@
 			);
 			dependencies = (
 			);
-			name = CTidyOSX;
+			name = Tidy;
 			productName = CTidyOSX;
 			productReference = 5F2A139D19DD86C8005817F9 /* CTidyOSX.framework */;
 			productType = "com.apple.product-type.framework";
@@ -474,7 +474,7 @@
 			projectRoot = "";
 			targets = (
 				5445E1BA1593248A00A3137D /* CTidy */,
-				5F2A139C19DD86C8005817F9 /* CTidyOSX */,
+				5F2A139C19DD86C8005817F9 /* Tidy */,
 				5F2A13A619DD86C8005817F9 /* CTidyOSXTests */,
 			);
 		};
@@ -855,13 +855,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "CTidyOSX" */ = {
+		5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "Tidy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2A13AD19DD86C8005817F9 /* Debug */,
 				5F2A13AE19DD86C8005817F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F2A13B219DD86C9005817F9 /* Build configuration list for PBXNativeTarget "CTidyOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -870,6 +871,7 @@
 				5F2A13B019DD86C8005817F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

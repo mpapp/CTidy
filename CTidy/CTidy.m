@@ -69,6 +69,19 @@
     theResultCode = ig_tidyOptSetBool(theTidyDocument, TidyForceOutput, YES);
     NSAssert(theResultCode >= 0, @"tidyOptSetBool() should return 0");
     
+    ig_tidyOptSetBool(theTidyDocument, TidyEmptyTags, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyLogicalEmphasis, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyIndentContent, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyMakeBare, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyMakeClean, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyDropFontTags, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyBreakBeforeBR, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyQuoteMarks, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyQuoteNbsp, false);
+    ig_tidyOptSetBool(theTidyDocument, TidyQuoteAmpersand, true);
+    ig_tidyOptSetBool(theTidyDocument, TidyJoinClasses, true);
+    
+    
     // Set encoding - same for input and output
     theResultCode = ig_tidySetInCharEncoding(theTidyDocument, inEncoding.UTF8String);
     NSAssert(theResultCode >= 0, @"tidySetInCharEncoding() should return 0");

@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char CTidyOSXVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CTidyOSX/PublicHeader.h>
 
-
+#import "CTidy.h"
