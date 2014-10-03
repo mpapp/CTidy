@@ -43,7 +43,13 @@
     return([[self alloc] init]);
 }
 
-- (NSData *)tidyData:(NSData *)inData inputFormat:(CTidyFormat)inInputFormat outputFormat:(CTidyFormat)inOutputFormat encoding:(NSString*)inEncoding diagnostics:(NSString **)outDiagnostics error:(NSError **)outError
+- (NSData *)tidyData:(NSData *)inData
+         inputFormat:(CTidyFormat)inInputFormat
+        outputFormat:(CTidyFormat)inOutputFormat
+            encoding:(NSString*)inEncoding
+configurationHandler:(void (^)(TidyDoc doc))configHandler
+         diagnostics:(NSString **)outDiagnostics
+               error:(NSError **)outError
 {
     TidyDoc theTidyDocument = ig_tidyCreate();
 
@@ -69,19 +75,6 @@
     theResultCode = ig_tidyOptSetBool(theTidyDocument, TidyForceOutput, YES);
     NSAssert(theResultCode >= 0, @"tidyOptSetBool() should return 0");
     
-    ig_tidyOptSetBool(theTidyDocument, TidyEmptyTags, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyLogicalEmphasis, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyIndentContent, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyMakeBare, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyMakeClean, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyDropFontTags, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyBreakBeforeBR, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyQuoteMarks, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyQuoteNbsp, false);
-    ig_tidyOptSetBool(theTidyDocument, TidyQuoteAmpersand, true);
-    ig_tidyOptSetBool(theTidyDocument, TidyJoinClasses, true);
-    
-    
     // Set encoding - same for input and output
     theResultCode = ig_tidySetInCharEncoding(theTidyDocument, inEncoding.UTF8String);
     NSAssert(theResultCode >= 0, @"tidySetInCharEncoding() should return 0");
@@ -95,6 +88,9 @@
     NSAssert(theResultCode >= 0, @"tidySetErrorBuffer() should return 0");
     
     // #############################################################################
+    
+    if (configHandler)
+        configHandler(theTidyDocument); // do custom configuration calls here.
     
     // Create an input buffer and copy input to it (TODO uses 2X memory == bad!)
     TidyBuffer theInputBuffer;
@@ -153,7 +149,13 @@
     return(theOutput);
 }
 
-- (NSString *)tidyString:(NSString *)inString inputFormat:(CTidyFormat)inInputFormat outputFormat:(CTidyFormat)inOutputFormat encoding:(NSString*)inEncoding diagnostics:(NSString **)outDiagnostics error:(NSError **)outError
+- (NSString *)tidyString:(NSString *)inString
+             inputFormat:(CTidyFormat)inInputFormat
+            outputFormat:(CTidyFormat)inOutputFormat
+                encoding:(NSString*)inEncoding
+    configurationHandler:(void (^)(TidyDoc doc))configHandler
+             diagnostics:(NSString **)outDiagnostics
+                   error:(NSError **)outError
 {
     TidyDoc theTidyDocument = ig_tidyCreate();
     
@@ -192,6 +194,9 @@
     NSAssert(theResultCode >= 0, @"tidySetErrorBuffer() should return 0");
     
     // #############################################################################
+    
+    if (configHandler)
+        configHandler(theTidyDocument);
     
     // Parse the data.
     theResultCode = ig_tidyParseString(theTidyDocument, [inString UTF8String]);
@@ -242,8 +247,17 @@
     return(theString);
 }
 
-- (NSString *)tidyHTMLString:(NSString *)inString encoding:(NSString*)inEncoding error:(NSError **)outError {
-    return [self tidyString:inString inputFormat:CTidyFormatHTML outputFormat:CTidyFormatXHTML encoding:inEncoding diagnostics:nil error:outError];
+- (NSString *)tidyHTMLString:(NSString *)inString
+                    encoding:(NSString*)inEncoding
+        configurationHandler:(void (^)(TidyDoc doc))configHandler
+                       error:(NSError **)outError {
+    return [self tidyString:inString
+                inputFormat:CTidyFormatHTML
+               outputFormat:CTidyFormatXHTML
+                   encoding:inEncoding
+       configurationHandler:configHandler
+                diagnostics:nil
+                      error:outError];
 }
 
 @end

@@ -40,15 +40,34 @@ typedef enum {
 	CTidyFormatXHTML,
 } CTidyFormat;
 
+/** ObjC class wrapper for
+  * The character encoding should be from the set of:
+  * ascii, latin1, raw, utf8, iso2022, mac,
+  *  win1252, utf16le, utf16be, utf16, big5 and shiftjis.  Case in-sensitive. */
 @interface CTidy : NSObject {
 }
 
 + (CTidy *)tidy;
 
-- (NSData *)tidyData:(NSData *)inData inputFormat:(CTidyFormat)inInputFormat outputFormat:(CTidyFormat)inOutputFormat encoding:(NSString*)inEncoding diagnostics:(NSString **)outDiagnostics error:(NSError **)outError;
+- (NSData *)tidyData:(NSData *)inData
+         inputFormat:(CTidyFormat)inInputFormat
+        outputFormat:(CTidyFormat)inOutputFormat
+            encoding:(NSString*)inEncoding
+configurationHandler:(void (^)(TidyDoc doc))configHandler
+         diagnostics:(NSString **)outDiagnostics
+               error:(NSError **)outError;
 
-- (NSString *)tidyString:(NSString *)inString inputFormat:(CTidyFormat)inInputFormat outputFormat:(CTidyFormat)inOutputFormat encoding:(NSString*)inEncoding diagnostics:(NSString **)outDiagnostics error:(NSError **)outError;
+- (NSString *)tidyString:(NSString *)inString
+             inputFormat:(CTidyFormat)inInputFormat
+            outputFormat:(CTidyFormat)inOutputFormat
+                encoding:(NSString*)inEncoding
+    configurationHandler:(void (^)(TidyDoc doc))configHandler
+             diagnostics:(NSString **)outDiagnostics
+                   error:(NSError **)outError;
 
-- (NSString *)tidyHTMLString:(NSString *)inString encoding:(NSString*)inEncoding error:(NSError **)outError;
+- (NSString *)tidyHTMLString:(NSString *)inString
+                    encoding:(NSString *)inEncoding
+        configurationHandler:(void (^)(TidyDoc doc))configHandler
+                       error:(NSError **)outError;
 @end
 
