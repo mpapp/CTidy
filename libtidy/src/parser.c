@@ -4166,8 +4166,9 @@ void TY_(ParseDocument)(TidyDocImpl* doc)
             if (AttrValueIs(xmlns, XHTML_NAMESPACE))
             {
                 Bool htmlOut = cfgBool( doc, TidyHtmlOut );
+                Bool xmlOut = cfgBool(doc, TidyXmlOut);
                 doc->lexer->isvoyager = yes;                  /* Unless plain HTML */
-                TY_(SetOptionBool)( doc, TidyXhtmlOut, !htmlOut ); /* is specified, output*/
+                TY_(SetOptionBool)( doc, TidyXhtmlOut, !(htmlOut || xmlOut)); /* is specified, output*/
                 TY_(SetOptionBool)( doc, TidyXmlOut, !htmlOut );   /* will be XHTML. */
 
                 /* adjust other config options, just as in config.c */

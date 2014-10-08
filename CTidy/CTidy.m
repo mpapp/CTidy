@@ -68,6 +68,8 @@ configurationHandler:(void (^)(TidyDoc doc))configHandler
         theOutputValue = TidyHtmlOut;
     else if (inOutputFormat == CTidyFormatXHTML)
         theOutputValue = TidyXhtmlOut;
+    else if (inOutputFormat == CTidyFormatXML)
+        theOutputValue = TidyXmlOut;
     theResultCode = ig_tidyOptSetBool(theTidyDocument, theOutputValue, YES);
     NSAssert(theResultCode >= 0, @"tidyOptSetBool() should return 0");
     
@@ -174,6 +176,8 @@ configurationHandler:(void (^)(TidyDoc doc))configHandler
         theOutputValue = TidyHtmlOut;
     else if (inOutputFormat == CTidyFormatXHTML)
         theOutputValue = TidyXhtmlOut;
+    else if (inOutputFormat == CTidyFormatXML)
+        theOutputValue = TidyXmlOut;
     theResultCode = ig_tidyOptSetBool(theTidyDocument, theOutputValue, YES);
     NSAssert(theResultCode >= 0, @"tidyOptSetBool() should return 0");
     

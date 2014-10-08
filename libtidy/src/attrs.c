@@ -1077,7 +1077,10 @@ const Attribute* TY_(CheckAttribute)( TidyDocImpl* doc, Node *node, AttVal *attv
             doc->lexer->isvoyager = yes;
             if (!cfgBool(doc, TidyHtmlOut))
             {
-                TY_(SetOptionBool)(doc, TidyXhtmlOut, yes);
+                if (!(cfgBool(doc, TidyXmlOut)))
+                {
+                    TY_(SetOptionBool)(doc, TidyXhtmlOut, yes);
+                }
                 TY_(SetOptionBool)(doc, TidyXmlOut, yes);
             }
         }
