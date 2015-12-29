@@ -22,3 +22,5 @@ FOUNDATION_EXPORT const unsigned char CTidyOSXVersionString[];
 #import "tidyenum.h"
 
 #import "CTidy.h"
+
+#import "buffio.h"

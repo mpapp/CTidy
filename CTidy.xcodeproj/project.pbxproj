@@ -156,7 +156,7 @@
 		5445E205159324E600A3137D /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		5445E206159324E600A3137D /* win32tc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = win32tc.c; sourceTree = "<group>"; };
 		5445E207159324E600A3137D /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32tc.h; sourceTree = "<group>"; };
-		5F2A139D19DD86C8005817F9 /* Tidy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tidy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2A139D19DD86C8005817F9 /* TidyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TidyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A13A019DD86C8005817F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A13A119DD86C8005817F9 /* TidyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TidyFramework.h; sourceTree = "<group>"; };
 		5F2A13A719DD86C8005817F9 /* CTidyOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTidyOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				5445E1BB1593248A00A3137D /* libCTidy.a */,
-				5F2A139D19DD86C8005817F9 /* Tidy.framework */,
+				5F2A139D19DD86C8005817F9 /* TidyFramework.framework */,
 				5F2A13A719DD86C8005817F9 /* CTidyOSXTests.xctest */,
 			);
 			name = Products;
@@ -418,9 +418,9 @@
 			productReference = 5445E1BB1593248A00A3137D /* libCTidy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5F2A139C19DD86C8005817F9 /* Tidy */ = {
+		5F2A139C19DD86C8005817F9 /* TidyFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "Tidy" */;
+			buildConfigurationList = 5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "TidyFramework" */;
 			buildPhases = (
 				5F2A139819DD86C8005817F9 /* Sources */,
 				5F2A139919DD86C8005817F9 /* Frameworks */,
@@ -431,9 +431,9 @@
 			);
 			dependencies = (
 			);
-			name = Tidy;
+			name = TidyFramework;
 			productName = CTidyOSX;
-			productReference = 5F2A139D19DD86C8005817F9 /* Tidy.framework */;
+			productReference = 5F2A139D19DD86C8005817F9 /* TidyFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5F2A13A619DD86C8005817F9 /* CTidyOSXTests */ = {
@@ -483,7 +483,7 @@
 			projectRoot = "";
 			targets = (
 				5445E1BA1593248A00A3137D /* CTidy */,
-				5F2A139C19DD86C8005817F9 /* Tidy */,
+				5F2A139C19DD86C8005817F9 /* TidyFramework */,
 				5F2A13A619DD86C8005817F9 /* CTidyOSXTests */,
 			);
 		};
@@ -1473,7 +1473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "Tidy" */ = {
+		5F2A13B119DD86C9005817F9 /* Build configuration list for PBXNativeTarget "TidyFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2A13AD19DD86C8005817F9 /* Debug */,
