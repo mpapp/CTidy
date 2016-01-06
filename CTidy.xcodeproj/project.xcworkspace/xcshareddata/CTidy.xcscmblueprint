@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "66DEF20B25A2CF25F686EA327D795A8CBA6AB8C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "66DEF20B25A2CF25F686EA327D795A8CBA6AB8C9" : 0,
+    "0B5936C9CBA1409844D74AA6E444E0F825C39CB9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "771B39F8-A18F-4A03-872C-74907DA6A35D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "66DEF20B25A2CF25F686EA327D795A8CBA6AB8C9" : "CTidy",
+    "0B5936C9CBA1409844D74AA6E444E0F825C39CB9" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CTidy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CTidy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mpapp\/Manuscripts.app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B5936C9CBA1409844D74AA6E444E0F825C39CB9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mpapp\/CTidy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66DEF20B25A2CF25F686EA327D795A8CBA6AB8C9"
+    }
+  ]
+}
