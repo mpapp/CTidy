@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ignition Soft Limited. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CTidyOSX.
 FOUNDATION_EXPORT double CTidyOSXVersionNumber;
