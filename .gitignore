@@ -1,3 +1,5 @@
 xcuserdata
 *.xcuserdatad
 build
+
+Carthage/Build

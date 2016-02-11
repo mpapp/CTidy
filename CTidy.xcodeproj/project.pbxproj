@@ -96,6 +96,59 @@
 		5F2A144B19DEAA0E005817F9 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E203159324E600A3137D /* utf8.c */; };
 		5F2A144C19DEAA0E005817F9 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E206159324E600A3137D /* win32tc.c */; };
 		5F2A144D19DEAA92005817F9 /* tidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D5159324E600A3137D /* tidy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B35E1C6CB5CF000E40E7 /* access.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1D8159324E600A3137D /* access.c */; };
+		5F59B35F1C6CB5CF000E40E7 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1DA159324E600A3137D /* alloc.c */; };
+		5F59B3601C6CB5CF000E40E7 /* attrask.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1DB159324E600A3137D /* attrask.c */; };
+		5F59B3611C6CB5CF000E40E7 /* attrdict.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1DC159324E600A3137D /* attrdict.c */; };
+		5F59B3621C6CB5CF000E40E7 /* attrget.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1DE159324E600A3137D /* attrget.c */; };
+		5F59B3631C6CB5CF000E40E7 /* attrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1DF159324E600A3137D /* attrs.c */; };
+		5F59B3641C6CB5CF000E40E7 /* buffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1E1159324E600A3137D /* buffio.c */; };
+		5F59B3651C6CB5CF000E40E7 /* charsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1E2159324E600A3137D /* charsets.c */; };
+		5F59B3661C6CB5CF000E40E7 /* clean.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1E4159324E600A3137D /* clean.c */; };
+		5F59B3671C6CB5CF000E40E7 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1E6159324E600A3137D /* config.c */; };
+		5F59B3681C6CB5CF000E40E7 /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1E8159324E600A3137D /* entities.c */; };
+		5F59B3691C6CB5CF000E40E7 /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1EA159324E600A3137D /* fileio.c */; };
+		5F59B36A1C6CB5CF000E40E7 /* iconvtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1ED159324E600A3137D /* iconvtc.c */; };
+		5F59B36B1C6CB5CF000E40E7 /* istack.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1EF159324E600A3137D /* istack.c */; };
+		5F59B36C1C6CB5CF000E40E7 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1F0159324E600A3137D /* lexer.c */; };
+		5F59B36D1C6CB5CF000E40E7 /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1F2159324E600A3137D /* localize.c */; };
+		5F59B36E1C6CB5CF000E40E7 /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1F3159324E600A3137D /* mappedio.c */; };
+		5F59B36F1C6CB5CF000E40E7 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1F6159324E600A3137D /* parser.c */; };
+		5F59B3701C6CB5CF000E40E7 /* pprint.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1F8159324E600A3137D /* pprint.c */; };
+		5F59B3711C6CB5CF000E40E7 /* streamio.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1FA159324E600A3137D /* streamio.c */; };
+		5F59B3721C6CB5CF000E40E7 /* tagask.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1FC159324E600A3137D /* tagask.c */; };
+		5F59B3731C6CB5CF000E40E7 /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1FD159324E600A3137D /* tags.c */; };
+		5F59B3741C6CB5CF000E40E7 /* tidylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E200159324E600A3137D /* tidylib.c */; };
+		5F59B3751C6CB5CF000E40E7 /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E201159324E600A3137D /* tmbstr.c */; };
+		5F59B3761C6CB5CF000E40E7 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E203159324E600A3137D /* utf8.c */; };
+		5F59B3771C6CB5CF000E40E7 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5445E206159324E600A3137D /* win32tc.c */; };
+		5F59B3781C6CB5EC000E40E7 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5445E1C41593248B00A3137D /* CTidy.m */; };
+		5F59B3791C6CB5EF000E40E7 /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1C31593248B00A3137D /* CTidy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B37A1C6CB610000E40E7 /* access.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D9159324E600A3137D /* access.h */; };
+		5F59B37B1C6CB610000E40E7 /* attrdict.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1DD159324E600A3137D /* attrdict.h */; };
+		5F59B37C1C6CB610000E40E7 /* attrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1E0159324E600A3137D /* attrs.h */; };
+		5F59B37D1C6CB610000E40E7 /* charsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1E3159324E600A3137D /* charsets.h */; };
+		5F59B37E1C6CB610000E40E7 /* clean.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1E5159324E600A3137D /* clean.h */; };
+		5F59B37F1C6CB610000E40E7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1E7159324E600A3137D /* config.h */; };
+		5F59B3801C6CB610000E40E7 /* entities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1E9159324E600A3137D /* entities.h */; };
+		5F59B3811C6CB610000E40E7 /* fileio.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1EB159324E600A3137D /* fileio.h */; };
+		5F59B3821C6CB610000E40E7 /* forward.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1EC159324E600A3137D /* forward.h */; };
+		5F59B3831C6CB610000E40E7 /* iconvtc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1EE159324E600A3137D /* iconvtc.h */; };
+		5F59B3841C6CB610000E40E7 /* lexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1F1159324E600A3137D /* lexer.h */; };
+		5F59B3851C6CB610000E40E7 /* mappedio.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1F4159324E600A3137D /* mappedio.h */; };
+		5F59B3861C6CB610000E40E7 /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1F5159324E600A3137D /* message.h */; };
+		5F59B3871C6CB610000E40E7 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1F7159324E600A3137D /* parser.h */; };
+		5F59B3881C6CB610000E40E7 /* pprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1F9159324E600A3137D /* pprint.h */; };
+		5F59B3891C6CB610000E40E7 /* streamio.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1FB159324E600A3137D /* streamio.h */; };
+		5F59B38A1C6CB610000E40E7 /* tags.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1FE159324E600A3137D /* tags.h */; };
+		5F59B38B1C6CB610000E40E7 /* tidy-int.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1FF159324E600A3137D /* tidy-int.h */; };
+		5F59B38C1C6CB610000E40E7 /* tmbstr.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E202159324E600A3137D /* tmbstr.h */; };
+		5F59B38D1C6CB610000E40E7 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E205159324E600A3137D /* version.h */; };
+		5F59B38E1C6CB610000E40E7 /* win32tc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E207159324E600A3137D /* win32tc.h */; };
+		5F59B38F1C6CB708000E40E7 /* TidyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F2A13A119DD86C8005817F9 /* TidyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B3901C6CB72B000E40E7 /* tidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D5159324E600A3137D /* tidy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B3911C6CB737000E40E7 /* tidyenum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D6159324E600A3137D /* tidyenum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B3921C6CB73E000E40E7 /* buffio.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D3159324E600A3137D /* buffio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +215,8 @@
 		5F2A13A719DD86C8005817F9 /* CTidyOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTidyOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2A13AA19DD86C8005817F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2A13AB19DD86C8005817F9 /* CTidyOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTidyOSXTests.m; sourceTree = "<group>"; };
+		5F59B3521C6CB58E000E40E7 /* TidyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TidyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F59B3561C6CB58E000E40E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +242,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F59B34E1C6CB58E000E40E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -196,6 +258,7 @@
 				5445E1C01593248A00A3137D /* CTidy */,
 				5F2A139E19DD86C8005817F9 /* Tidy Framework */,
 				5F2A13A819DD86C8005817F9 /* CTidyOSXTests */,
+				5F59B3531C6CB58E000E40E7 /* TidyFramework-iOS */,
 				5445E1BD1593248A00A3137D /* Frameworks */,
 				5445E1BC1593248A00A3137D /* Products */,
 			);
@@ -207,6 +270,7 @@
 				5445E1BB1593248A00A3137D /* libCTidy.a */,
 				5F2A139D19DD86C8005817F9 /* TidyFramework.framework */,
 				5F2A13A719DD86C8005817F9 /* CTidyOSXTests.xctest */,
+				5F59B3521C6CB58E000E40E7 /* TidyFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,6 +412,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5F59B3531C6CB58E000E40E7 /* TidyFramework-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5F59B3561C6CB58E000E40E7 /* Info.plist */,
+			);
+			path = "TidyFramework-iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -395,6 +467,39 @@
 				5F2A13B319DD86D6005817F9 /* CTidy.h in Headers */,
 				5F2A144D19DEAA92005817F9 /* tidy.h in Headers */,
 				5F2A13A219DD86C8005817F9 /* TidyFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F59B34F1C6CB58E000E40E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F59B3891C6CB610000E40E7 /* streamio.h in Headers */,
+				5F59B3861C6CB610000E40E7 /* message.h in Headers */,
+				5F59B38C1C6CB610000E40E7 /* tmbstr.h in Headers */,
+				5F59B37E1C6CB610000E40E7 /* clean.h in Headers */,
+				5F59B3801C6CB610000E40E7 /* entities.h in Headers */,
+				5F59B3841C6CB610000E40E7 /* lexer.h in Headers */,
+				5F59B3881C6CB610000E40E7 /* pprint.h in Headers */,
+				5F59B38E1C6CB610000E40E7 /* win32tc.h in Headers */,
+				5F59B37A1C6CB610000E40E7 /* access.h in Headers */,
+				5F59B3821C6CB610000E40E7 /* forward.h in Headers */,
+				5F59B37C1C6CB610000E40E7 /* attrs.h in Headers */,
+				5F59B3831C6CB610000E40E7 /* iconvtc.h in Headers */,
+				5F59B3791C6CB5EF000E40E7 /* CTidy.h in Headers */,
+				5F59B38F1C6CB708000E40E7 /* TidyFramework.h in Headers */,
+				5F59B38A1C6CB610000E40E7 /* tags.h in Headers */,
+				5F59B37F1C6CB610000E40E7 /* config.h in Headers */,
+				5F59B3851C6CB610000E40E7 /* mappedio.h in Headers */,
+				5F59B38B1C6CB610000E40E7 /* tidy-int.h in Headers */,
+				5F59B3871C6CB610000E40E7 /* parser.h in Headers */,
+				5F59B3921C6CB73E000E40E7 /* buffio.h in Headers */,
+				5F59B3911C6CB737000E40E7 /* tidyenum.h in Headers */,
+				5F59B38D1C6CB610000E40E7 /* version.h in Headers */,
+				5F59B37D1C6CB610000E40E7 /* charsets.h in Headers */,
+				5F59B3811C6CB610000E40E7 /* fileio.h in Headers */,
+				5F59B3901C6CB72B000E40E7 /* tidy.h in Headers */,
+				5F59B37B1C6CB610000E40E7 /* attrdict.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +558,24 @@
 			productReference = 5F2A13A719DD86C8005817F9 /* CTidyOSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5F59B3511C6CB58E000E40E7 /* TidyFramework-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F59B35D1C6CB58E000E40E7 /* Build configuration list for PBXNativeTarget "TidyFramework-iOS" */;
+			buildPhases = (
+				5F59B34D1C6CB58E000E40E7 /* Sources */,
+				5F59B34E1C6CB58E000E40E7 /* Frameworks */,
+				5F59B34F1C6CB58E000E40E7 /* Headers */,
+				5F59B3501C6CB58E000E40E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TidyFramework-iOS";
+			productName = "TidyFramework-iOS";
+			productReference = 5F59B3521C6CB58E000E40E7 /* TidyFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -467,6 +590,9 @@
 					};
 					5F2A13A619DD86C8005817F9 = {
 						CreatedOnToolsVersion = 6.0.1;
+					};
+					5F59B3511C6CB58E000E40E7 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -485,6 +611,7 @@
 				5445E1BA1593248A00A3137D /* CTidy */,
 				5F2A139C19DD86C8005817F9 /* TidyFramework */,
 				5F2A13A619DD86C8005817F9 /* CTidyOSXTests */,
+				5F59B3511C6CB58E000E40E7 /* TidyFramework-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -498,6 +625,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5F2A13A519DD86C8005817F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F59B3501C6CB58E000E40E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,6 +714,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2A13AC19DD86C8005817F9 /* CTidyOSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F59B34D1C6CB58E000E40E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F59B36B1C6CB5CF000E40E7 /* istack.c in Sources */,
+				5F59B3651C6CB5CF000E40E7 /* charsets.c in Sources */,
+				5F59B3741C6CB5CF000E40E7 /* tidylib.c in Sources */,
+				5F59B3781C6CB5EC000E40E7 /* CTidy.m in Sources */,
+				5F59B3631C6CB5CF000E40E7 /* attrs.c in Sources */,
+				5F59B3771C6CB5CF000E40E7 /* win32tc.c in Sources */,
+				5F59B3711C6CB5CF000E40E7 /* streamio.c in Sources */,
+				5F59B35E1C6CB5CF000E40E7 /* access.c in Sources */,
+				5F59B36F1C6CB5CF000E40E7 /* parser.c in Sources */,
+				5F59B3601C6CB5CF000E40E7 /* attrask.c in Sources */,
+				5F59B3721C6CB5CF000E40E7 /* tagask.c in Sources */,
+				5F59B3621C6CB5CF000E40E7 /* attrget.c in Sources */,
+				5F59B36C1C6CB5CF000E40E7 /* lexer.c in Sources */,
+				5F59B3701C6CB5CF000E40E7 /* pprint.c in Sources */,
+				5F59B3691C6CB5CF000E40E7 /* fileio.c in Sources */,
+				5F59B3751C6CB5CF000E40E7 /* tmbstr.c in Sources */,
+				5F59B3641C6CB5CF000E40E7 /* buffio.c in Sources */,
+				5F59B3761C6CB5CF000E40E7 /* utf8.c in Sources */,
+				5F59B3661C6CB5CF000E40E7 /* clean.c in Sources */,
+				5F59B3681C6CB5CF000E40E7 /* entities.c in Sources */,
+				5F59B3611C6CB5CF000E40E7 /* attrdict.c in Sources */,
+				5F59B3731C6CB5CF000E40E7 /* tags.c in Sources */,
+				5F59B36E1C6CB5CF000E40E7 /* mappedio.c in Sources */,
+				5F59B35F1C6CB5CF000E40E7 /* alloc.c in Sources */,
+				5F59B3671C6CB5CF000E40E7 /* config.c in Sources */,
+				5F59B36D1C6CB5CF000E40E7 /* localize.c in Sources */,
+				5F59B36A1C6CB5CF000E40E7 /* iconvtc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1297,6 +1465,214 @@
 			};
 			name = Internal;
 		};
+		5F59B3571C6CB58E000E40E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F59B3581C6CB58E000E40E7 /* AppStoreDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStoreDebug;
+		};
+		5F59B3591C6CB58E000E40E7 /* Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Internal;
+		};
+		5F59B35A1C6CB58E000E40E7 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Testing;
+		};
+		5F59B35B1C6CB58E000E40E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F59B35C1C6CB58E000E40E7 /* AppStoreRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TidyFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuscriptsapp.TidyFramework-iOS";
+				PRODUCT_NAME = TidyFramework;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStoreRelease;
+		};
 		5FBA721819E01FFB00E2A954 /* Testing */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1498,6 +1874,18 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5F59B35D1C6CB58E000E40E7 /* Build configuration list for PBXNativeTarget "TidyFramework-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F59B3571C6CB58E000E40E7 /* Debug */,
+				5F59B3581C6CB58E000E40E7 /* AppStoreDebug */,
+				5F59B3591C6CB58E000E40E7 /* Internal */,
+				5F59B35A1C6CB58E000E40E7 /* Testing */,
+				5F59B35B1C6CB58E000E40E7 /* Release */,
+				5F59B35C1C6CB58E000E40E7 /* AppStoreRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
