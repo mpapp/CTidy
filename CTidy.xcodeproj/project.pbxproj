@@ -149,6 +149,8 @@
 		5F59B3901C6CB72B000E40E7 /* tidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D5159324E600A3137D /* tidy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F59B3911C6CB737000E40E7 /* tidyenum.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D6159324E600A3137D /* tidyenum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F59B3921C6CB73E000E40E7 /* buffio.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D3159324E600A3137D /* buffio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B3951C6CBEB0000E40E7 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E1D4159324E600A3137D /* platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F59B3961C6CBEC3000E40E7 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 5445E204159324E600A3137D /* utf8.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -480,6 +482,7 @@
 				5F59B37E1C6CB610000E40E7 /* clean.h in Headers */,
 				5F59B3801C6CB610000E40E7 /* entities.h in Headers */,
 				5F59B3841C6CB610000E40E7 /* lexer.h in Headers */,
+				5F59B3951C6CBEB0000E40E7 /* platform.h in Headers */,
 				5F59B3881C6CB610000E40E7 /* pprint.h in Headers */,
 				5F59B38E1C6CB610000E40E7 /* win32tc.h in Headers */,
 				5F59B37A1C6CB610000E40E7 /* access.h in Headers */,
@@ -488,6 +491,7 @@
 				5F59B3831C6CB610000E40E7 /* iconvtc.h in Headers */,
 				5F59B3791C6CB5EF000E40E7 /* CTidy.h in Headers */,
 				5F59B38F1C6CB708000E40E7 /* TidyFramework.h in Headers */,
+				5F59B3961C6CBEC3000E40E7 /* utf8.h in Headers */,
 				5F59B38A1C6CB610000E40E7 /* tags.h in Headers */,
 				5F59B37F1C6CB610000E40E7 /* config.h in Headers */,
 				5F59B3851C6CB610000E40E7 /* mappedio.h in Headers */,
@@ -1886,6 +1890,7 @@
 				5F59B35C1C6CB58E000E40E7 /* AppStoreRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
