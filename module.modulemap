@@ -1,6 +1,0 @@
-framework module TidyFramework {
-  umbrella header "TidyFramework.h"
-
-  export *
-  module * { export * }
-}
